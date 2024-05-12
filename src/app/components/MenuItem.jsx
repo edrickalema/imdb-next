@@ -4,9 +4,9 @@ import React from "react";
 const MenuItem = ({ title, address, icon }) => {
   return (
     <div>
-      <Link href={address}>
-        {icon}
-        <p className="uppercase sm:inline">{title}</p>
+      <Link className="flex items-center gap-1" href={address}>
+        <div className="sm:hidden">{icon}</div>
+        <p className="uppercase hidden sm:inline capitalized">{title}</p>
       </Link>
     </div>
   );
