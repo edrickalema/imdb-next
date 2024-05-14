@@ -9,15 +9,15 @@ const SingleMoviePage = async ({ params }) => {
   const movie = await getSingleMovie(id);
 
   return (
-    <div className="max-w-6xl mx-auto ">
+    <div className="max-w-6xl mx-auto w-full">
       <div className="flex gap-5 justify-center">
         <Image
           src={`https://image.tmdb.org/t/p/original/${
             movie.poster_path || movie.backdrop_path
           }`}
           alt={movie.Title}
-          width={300}
-          height={200}
+          width={500}
+          height={300}
         />
         <div>
           {" "}
